@@ -43,7 +43,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
 
                 log.Normal("Scanning Calamari Packages");
 
-                var indexEntries = packages.SelectMany(p => p.GetSourceFiles()).ToArray();
+                var indexEntries = packages.SelectMany(p => p.GetSourceFiles(log)).ToArray();
 
                 log.Normal("Creating consolidated Calamari package");
                 var sw = Stopwatch.StartNew();

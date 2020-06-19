@@ -20,7 +20,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
         public string Name => packageReference.Name;
         public string Version => packageReference.Version;
 
-        public IReadOnlyList<SourceFile> GetSourceFiles()
+        public IReadOnlyList<SourceFile> GetSourceFiles(ILog log)
         {
             var isNetFx = Name == "Calamari";
             var isCloud = Name == "Calamari.Cloud";

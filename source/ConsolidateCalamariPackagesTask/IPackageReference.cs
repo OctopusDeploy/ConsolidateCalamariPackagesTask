@@ -6,6 +6,6 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
     {
         string Name { get; }
         string Version { get; }
-        IReadOnlyList<SourceFile> GetSourceFiles();
+        IReadOnlyList<SourceFile> GetSourceFiles(ILog log);
     }
 }

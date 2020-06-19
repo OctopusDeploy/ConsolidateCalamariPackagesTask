@@ -20,13 +20,13 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
         public string Name => packageReference.Name;
         public string Version => packageReference.Version;
 
-        public IReadOnlyList<SourceFile> GetSourceFiles()
+        public IReadOnlyList<SourceFile> GetSourceFiles(ILog log)
         {
             var toolZipsDir = Path.Combine(packageReference.ResolvedPath, "tools");
 
             if (!Directory.Exists(toolZipsDir))
             {
-                Console.WriteLine($"Skipping {Name} as it does not have a tools folder: {toolZipsDir}");
+                log.Low($"Skipping {Name} as it does not have a tools folder: {toolZipsDir}");
                 return Array.Empty<SourceFile>();
             }
 
@@ -34,7 +34,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
 
             if (toolZips.Length == 0)
             {
-                Console.WriteLine($"Skipping {Name} as it does not have any zip files in the tools folder: {toolZipsDir}");
+                log.Low($"Skipping {Name} as it does not have any zip files in the tools folder: {toolZipsDir}");
                 return Array.Empty<SourceFile>();
             }
 
