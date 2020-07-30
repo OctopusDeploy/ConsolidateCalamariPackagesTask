@@ -22,11 +22,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
 
         public IReadOnlyList<SourceFile> GetSourceFiles(ILog log)
         {
-            var isNetFx = Name == "Calamari";
-            var isCloud = Name == "Calamari.Cloud";
-            var platform = isNetFx || isCloud
-                ? "netfx"
-                : Name.Split('.')[1];
+            var platform = Name.Split('.')[1];
 
             var archivePath = Path.Combine(packageReference.ResolvedPath, $"{Name}.{Version}.nupkg".ToLower());
             if (!File.Exists(archivePath))
@@ -40,7 +36,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                     .Where(e => !e.FullName.StartsWith("package/services"))
                     .Select(entry => new SourceFile
                     {
-                        PackageId = isCloud ? "Calamari.Cloud" : "Calamari",
+                        PackageId = Name,
                         Version = Version,
                         Platform = platform,
                         ArchivePath = archivePath,
