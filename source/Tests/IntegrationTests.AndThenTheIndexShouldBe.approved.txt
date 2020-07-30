@@ -2,7 +2,7 @@
   "Packages": {
     "Calamari.net40": {
       "PackageId": "Calamari.net40",
-      "Version": "14.1.3-enh-platforms0003",
+      "Version": "14.1.3-enh-platforms0004",
       "IsNupkg": true,
       "PlatformHashes": {
         "net40": [
@@ -101,11 +101,10 @@
     },
     "Calamari.net452": {
       "PackageId": "Calamari.net452",
-      "Version": "14.1.3-enh-platforms0003",
+      "Version": "14.1.3-enh-platforms0004",
       "IsNupkg": true,
       "PlatformHashes": {
         "net452": [
-          "<hash>",
           "<hash>",
           "<hash>",
           "<hash>",
@@ -287,10 +286,16 @@
     },
     "Calamari.linux-x64": {
       "PackageId": "Calamari.linux-x64",
-      "Version": "12.0.2",
+      "Version": "14.1.3-enh-platforms0004",
       "IsNupkg": true,
       "PlatformHashes": {
         "linux-x64": [
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
           "<hash>",
           "<hash>",
           "<hash>",
@@ -603,10 +608,17 @@
     },
     "Calamari.osx-x64": {
       "PackageId": "Calamari.osx-x64",
-      "Version": "12.0.2",
+      "Version": "14.1.3-enh-platforms0004",
       "IsNupkg": true,
       "PlatformHashes": {
         "osx-x64": [
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
           "<hash>",
           "<hash>",
           "<hash>",
@@ -918,10 +930,17 @@
     },
     "Calamari.win-x64": {
       "PackageId": "Calamari.win-x64",
-      "Version": "12.0.2",
+      "Version": "14.1.3-enh-platforms0004",
       "IsNupkg": true,
       "PlatformHashes": {
         "win-x64": [
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
+          "<hash>",
           "<hash>",
           "<hash>",
           "<hash>",

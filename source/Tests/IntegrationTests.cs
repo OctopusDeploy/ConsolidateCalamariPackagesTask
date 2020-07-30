@@ -35,7 +35,7 @@ namespace Tests
             temp = Path.GetTempFileName();
             File.Delete(temp);
             Directory.CreateDirectory(temp);
-            expectedZip = Path.Combine(temp, $"Calamari.de460c29ca798f9fa26f4924a8f10c1a.zip");
+            expectedZip = Path.Combine(temp, $"Calamari.ba9d6e5267ffb6019b86c8ab1f7648f5.zip");
         }
 
         public void TearDown()
