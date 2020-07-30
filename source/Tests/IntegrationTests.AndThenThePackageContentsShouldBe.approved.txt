@@ -68,6 +68,7 @@
 <hash>\Calamari.Azure.Accounts.dll
 <hash>\Calamari.Azure.Accounts.dll
 <hash>\Calamari.Azure.Accounts.pdb
+<hash>\Calamari.Azure.Accounts.pdb
 <hash>\Calamari.Azure.CloudServices.dll
 <hash>\Calamari.Azure.CloudServices.dll.config
 <hash>\Calamari.Azure.CloudServices.pdb
@@ -77,6 +78,7 @@
 <hash>\Calamari.Azure.dll
 <hash>\Calamari.Azure.dll.config
 <hash>\Calamari.Azure.exe.manifest
+<hash>\Calamari.Azure.exe.manifest
 <hash>\Calamari.Azure.pdb
 <hash>\Calamari.Azure.pdb
 <hash>\Calamari.Azure.ServiceFabric.dll
@@ -85,7 +87,12 @@
 <hash>\Calamari.Azure.WebApps.dll
 <hash>\Calamari.Azure.WebApps.dll.config
 <hash>\Calamari.Azure.WebApps.pdb
-<hash>\Calamari.Cloud.nuspec
+<hash>\Calamari.CloudAccounts.dll
+<hash>\Calamari.CloudAccounts.pdb
+<hash>\Calamari.Common.dll
+<hash>\Calamari.Common.dll
+<hash>\Calamari.Common.pdb
+<hash>\Calamari.Common.pdb
 <hash>\Calamari.deps.json
 <hash>\Calamari.deps.json
 <hash>\Calamari.deps.json
@@ -99,8 +106,10 @@
 <hash>\Calamari.exe.config
 <hash>\Calamari.exe.config
 <hash>\Calamari.exe.manifest
+<hash>\Calamari.exe.manifest
 <hash>\Calamari.linux-x64.nuspec
-<hash>\Calamari.nuspec
+<hash>\Calamari.net40.nuspec
+<hash>\Calamari.net452.nuspec
 <hash>\Calamari.osx-x64.nuspec
 <hash>\Calamari.pdb
 <hash>\Calamari.pdb
@@ -125,11 +134,9 @@
 <hash>\Calamari.Terraform.dll
 <hash>\Calamari.Terraform.dll
 <hash>\Calamari.Terraform.dll
-<hash>\Calamari.Terraform.dll
 <hash>\Calamari.Terraform.exe
 <hash>\Calamari.Terraform.exe
 <hash>\Calamari.Terraform.exe.config
-<hash>\Calamari.Terraform.pdb
 <hash>\Calamari.Terraform.pdb
 <hash>\Calamari.Terraform.pdb
 <hash>\Calamari.Terraform.pdb
@@ -358,8 +365,6 @@
 <hash>\Octodiff.dll
 <hash>\Octodiff.dll
 <hash>\Octodiff.exe
-<hash>\Octodiff.exe
-<hash>\Octopus.CoreUtilities.dll
 <hash>\Octopus.CoreUtilities.dll
 <hash>\Octopus.CoreUtilities.dll
 <hash>\Octopus.CoreUtilities.dll
@@ -371,11 +376,9 @@
 <hash>\Octopus.Versioning.dll
 <hash>\Octopus.Versioning.dll
 <hash>\Octopus.Versioning.dll
-<hash>\Octopus.Versioning.dll
 <hash>\Octopus.Web.Xdt.dll
 <hash>\Octopus.Web.Xdt.dll
 <hash>\Octopus.Web.Xdt.dll
-<hash>\Octostache.dll
 <hash>\Octostache.dll
 <hash>\Octostache.dll
 <hash>\Octostache.dll

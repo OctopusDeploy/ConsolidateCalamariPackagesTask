@@ -35,7 +35,7 @@ namespace Tests
             temp = Path.GetTempFileName();
             File.Delete(temp);
             Directory.CreateDirectory(temp);
-            expectedZip = Path.Combine(temp, $"Calamari.3327050d788658cd16da010e75580d32.zip");
+            expectedZip = Path.Combine(temp, $"Calamari.de460c29ca798f9fa26f4924a8f10c1a.zip");
         }
 
         public void TearDown()
@@ -58,8 +58,8 @@ namespace Tests
                 })
                 .ToArray();
         }
-        
-        
+
+
 
         public void WhenTheTaskIsExecuted()
         {
@@ -95,10 +95,10 @@ namespace Tests
 
         string GetCsProjFileName([CallerFilePath] string callerFilePath = null)
             => Path.Combine(Path.GetDirectoryName(callerFilePath), "Tests.csproj");
-        
+
         private static string SanitiseHashes(string s)
             => Regex.Replace(s, "[a-z0-9]{32}", "<hash>");
-        
+
         private static string Sanitise4PartVersions(string s)
             => Regex.Replace(s, @"[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+", "<version>");
 
