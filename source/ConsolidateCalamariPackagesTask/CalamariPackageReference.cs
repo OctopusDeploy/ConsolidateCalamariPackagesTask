@@ -43,7 +43,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                             Version = Version,
                             Platform = parts[0],
                             ArchivePath = archivePath,
-                            FullNameInDestinationArchive = entry.FullName,
+                            FullNameInDestinationArchive = string.Join("/", parts.Skip(1)),
                             FullNameInSourceArchive = entry.FullName,
                             Hash = hasher.Hash(entry)
                         };
