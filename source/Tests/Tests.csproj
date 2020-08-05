@@ -17,12 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <!-- These references are imported so that the Integration test has something to work with -->
-    <PackageReference Include="Calamari.net40" Version="14.1.3-enh-platforms0004" />
-    <PackageReference Include="Calamari.net452" Version="14.1.3-enh-platforms0004" />
-    <PackageReference Include="Sashimi.Terraform" Version="0.1.7-enh-packcalamari0002" />
-    <PackageReference Include="Calamari.linux-x64" Version="14.1.3-enh-platforms0004" />
-    <PackageReference Include="Calamari.osx-x64" Version="14.1.3-enh-platforms0004" />
-    <PackageReference Include="Calamari.win-x64" Version="14.1.3-enh-platforms0004" />
+    <PackageReference Include="Calamari" Version="14.2.2-enh-platforms0010" />
   </ItemGroup>
 
 </Project>
