@@ -32,6 +32,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                     .Where(e => e.FullName != "[Content_Types].xml")
                     .Where(e => !e.FullName.StartsWith("_rels"))
                     .Where(e => !e.FullName.StartsWith("package/services"))
+                    .Where(e => !e.FullName.EndsWith("nuspec"))
                     .Select(entry =>
                     {
                         // Sashimi zips have each full Calamari executable in folders according to platform
@@ -42,7 +43,6 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                             Version = Version,
                             Platform = parts[0],
                             ArchivePath = archivePath,
-                            IsNupkg = true,
                             FullNameInDestinationArchive = entry.FullName,
                             FullNameInSourceArchive = entry.FullName,
                             Hash = hasher.Hash(entry)
