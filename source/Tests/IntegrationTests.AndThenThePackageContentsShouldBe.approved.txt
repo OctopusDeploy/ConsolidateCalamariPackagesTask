@@ -28,7 +28,6 @@
 <hash>\linux-arm/createdump
 <hash>\linux-arm/FSharp/fsc.exe
 <hash>\linux-arm/FSharp/fsc.exe.config
-<hash>\linux-arm/FSharp/fsc.exe.ignore
 <hash>\linux-arm/FSharp/fsc.xml
 <hash>\linux-arm/FSharp/FSharp.Build.dll
 <hash>\linux-arm/FSharp/FSharp.Build.xml
@@ -44,11 +43,9 @@
 <hash>\linux-arm/FSharp/FSharp.Core.xml
 <hash>\linux-arm/FSharp/fsi.exe
 <hash>\linux-arm/FSharp/fsi.exe.config
-<hash>\linux-arm/FSharp/fsi.exe.ignore
 <hash>\linux-arm/FSharp/fsi.xml
 <hash>\linux-arm/FSharp/fsiAnyCpu.exe
 <hash>\linux-arm/FSharp/fsiAnyCpu.exe.config
-<hash>\linux-arm/FSharp/fsiAnyCpu.exe.ignore
 <hash>\linux-arm/FSharp/fsiAnyCpu.xml
 <hash>\linux-arm/FSharp/Microsoft.Build.dll
 <hash>\linux-arm/FSharp/Microsoft.Build.Engine.dll
@@ -133,7 +130,6 @@
 <hash>\linux-arm/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\linux-arm/ScriptCS/scriptcs.exe
 <hash>\linux-arm/ScriptCS/scriptcs.exe.config
-<hash>\linux-arm/ScriptCS/scriptcs.exe.ignore
 <hash>\linux-arm/ScriptCS/ScriptCs.Hosting.dll
 <hash>\linux-arm/ScriptCS/System.Collections.Immutable.dll
 <hash>\linux-arm/ScriptCS/System.Reflection.Metadata.dll
@@ -344,7 +340,6 @@
 <hash>\linux-arm64/createdump
 <hash>\linux-arm64/FSharp/fsc.exe
 <hash>\linux-arm64/FSharp/fsc.exe.config
-<hash>\linux-arm64/FSharp/fsc.exe.ignore
 <hash>\linux-arm64/FSharp/fsc.xml
 <hash>\linux-arm64/FSharp/FSharp.Build.dll
 <hash>\linux-arm64/FSharp/FSharp.Build.xml
@@ -360,11 +355,9 @@
 <hash>\linux-arm64/FSharp/FSharp.Core.xml
 <hash>\linux-arm64/FSharp/fsi.exe
 <hash>\linux-arm64/FSharp/fsi.exe.config
-<hash>\linux-arm64/FSharp/fsi.exe.ignore
 <hash>\linux-arm64/FSharp/fsi.xml
 <hash>\linux-arm64/FSharp/fsiAnyCpu.exe
 <hash>\linux-arm64/FSharp/fsiAnyCpu.exe.config
-<hash>\linux-arm64/FSharp/fsiAnyCpu.exe.ignore
 <hash>\linux-arm64/FSharp/fsiAnyCpu.xml
 <hash>\linux-arm64/FSharp/Microsoft.Build.dll
 <hash>\linux-arm64/FSharp/Microsoft.Build.Engine.dll
@@ -449,7 +442,6 @@
 <hash>\linux-arm64/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\linux-arm64/ScriptCS/scriptcs.exe
 <hash>\linux-arm64/ScriptCS/scriptcs.exe.config
-<hash>\linux-arm64/ScriptCS/scriptcs.exe.ignore
 <hash>\linux-arm64/ScriptCS/ScriptCs.Hosting.dll
 <hash>\linux-arm64/ScriptCS/System.Collections.Immutable.dll
 <hash>\linux-arm64/ScriptCS/System.Reflection.Metadata.dll
@@ -660,7 +652,6 @@
 <hash>\linux-x64/createdump
 <hash>\linux-x64/FSharp/fsc.exe
 <hash>\linux-x64/FSharp/fsc.exe.config
-<hash>\linux-x64/FSharp/fsc.exe.ignore
 <hash>\linux-x64/FSharp/fsc.xml
 <hash>\linux-x64/FSharp/FSharp.Build.dll
 <hash>\linux-x64/FSharp/FSharp.Build.xml
@@ -676,11 +667,9 @@
 <hash>\linux-x64/FSharp/FSharp.Core.xml
 <hash>\linux-x64/FSharp/fsi.exe
 <hash>\linux-x64/FSharp/fsi.exe.config
-<hash>\linux-x64/FSharp/fsi.exe.ignore
 <hash>\linux-x64/FSharp/fsi.xml
 <hash>\linux-x64/FSharp/fsiAnyCpu.exe
 <hash>\linux-x64/FSharp/fsiAnyCpu.exe.config
-<hash>\linux-x64/FSharp/fsiAnyCpu.exe.ignore
 <hash>\linux-x64/FSharp/fsiAnyCpu.xml
 <hash>\linux-x64/FSharp/Microsoft.Build.dll
 <hash>\linux-x64/FSharp/Microsoft.Build.Engine.dll
@@ -765,7 +754,6 @@
 <hash>\linux-x64/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\linux-x64/ScriptCS/scriptcs.exe
 <hash>\linux-x64/ScriptCS/scriptcs.exe.config
-<hash>\linux-x64/ScriptCS/scriptcs.exe.ignore
 <hash>\linux-x64/ScriptCS/ScriptCs.Hosting.dll
 <hash>\linux-x64/ScriptCS/System.Collections.Immutable.dll
 <hash>\linux-x64/ScriptCS/System.Reflection.Metadata.dll
@@ -959,7 +947,6 @@
 <hash>\net40/Calamari.Shared.pdb
 <hash>\net40/FSharp/fsc.exe
 <hash>\net40/FSharp/fsc.exe.config
-<hash>\net40/FSharp/fsc.exe.ignore
 <hash>\net40/FSharp/fsc.xml
 <hash>\net40/FSharp/FSharp.Build.dll
 <hash>\net40/FSharp/FSharp.Build.xml
@@ -975,11 +962,9 @@
 <hash>\net40/FSharp/FSharp.Core.xml
 <hash>\net40/FSharp/fsi.exe
 <hash>\net40/FSharp/fsi.exe.config
-<hash>\net40/FSharp/fsi.exe.ignore
 <hash>\net40/FSharp/fsi.xml
 <hash>\net40/FSharp/fsiAnyCpu.exe
 <hash>\net40/FSharp/fsiAnyCpu.exe.config
-<hash>\net40/FSharp/fsiAnyCpu.exe.ignore
 <hash>\net40/FSharp/fsiAnyCpu.xml
 <hash>\net40/FSharp/Microsoft.Build.dll
 <hash>\net40/FSharp/Microsoft.Build.Engine.dll
@@ -1024,7 +1009,6 @@
 <hash>\net40/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\net40/ScriptCS/scriptcs.exe
 <hash>\net40/ScriptCS/scriptcs.exe.config
-<hash>\net40/ScriptCS/scriptcs.exe.ignore
 <hash>\net40/ScriptCS/ScriptCs.Hosting.dll
 <hash>\net40/ScriptCS/System.Collections.Immutable.dll
 <hash>\net40/ScriptCS/System.Reflection.Metadata.dll
@@ -1088,7 +1072,6 @@
 <hash>\net452/fr/System.Spatial.resources.dll
 <hash>\net452/FSharp/fsc.exe
 <hash>\net452/FSharp/fsc.exe.config
-<hash>\net452/FSharp/fsc.exe.ignore
 <hash>\net452/FSharp/fsc.xml
 <hash>\net452/FSharp/FSharp.Build.dll
 <hash>\net452/FSharp/FSharp.Build.xml
@@ -1104,11 +1087,9 @@
 <hash>\net452/FSharp/FSharp.Core.xml
 <hash>\net452/FSharp/fsi.exe
 <hash>\net452/FSharp/fsi.exe.config
-<hash>\net452/FSharp/fsi.exe.ignore
 <hash>\net452/FSharp/fsi.xml
 <hash>\net452/FSharp/fsiAnyCpu.exe
 <hash>\net452/FSharp/fsiAnyCpu.exe.config
-<hash>\net452/FSharp/fsiAnyCpu.exe.ignore
 <hash>\net452/FSharp/fsiAnyCpu.xml
 <hash>\net452/FSharp/Microsoft.Build.dll
 <hash>\net452/FSharp/Microsoft.Build.Engine.dll
@@ -1195,7 +1176,6 @@
 <hash>\net452/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\net452/ScriptCS/scriptcs.exe
 <hash>\net452/ScriptCS/scriptcs.exe.config
-<hash>\net452/ScriptCS/scriptcs.exe.ignore
 <hash>\net452/ScriptCS/ScriptCs.Hosting.dll
 <hash>\net452/ScriptCS/System.Collections.Immutable.dll
 <hash>\net452/ScriptCS/System.Reflection.Metadata.dll
@@ -1247,7 +1227,6 @@
 <hash>\osx-x64/Calamari.Shared.pdb
 <hash>\osx-x64/FSharp/fsc.exe
 <hash>\osx-x64/FSharp/fsc.exe.config
-<hash>\osx-x64/FSharp/fsc.exe.ignore
 <hash>\osx-x64/FSharp/fsc.xml
 <hash>\osx-x64/FSharp/FSharp.Build.dll
 <hash>\osx-x64/FSharp/FSharp.Build.xml
@@ -1263,11 +1242,9 @@
 <hash>\osx-x64/FSharp/FSharp.Core.xml
 <hash>\osx-x64/FSharp/fsi.exe
 <hash>\osx-x64/FSharp/fsi.exe.config
-<hash>\osx-x64/FSharp/fsi.exe.ignore
 <hash>\osx-x64/FSharp/fsi.xml
 <hash>\osx-x64/FSharp/fsiAnyCpu.exe
 <hash>\osx-x64/FSharp/fsiAnyCpu.exe.config
-<hash>\osx-x64/FSharp/fsiAnyCpu.exe.ignore
 <hash>\osx-x64/FSharp/fsiAnyCpu.xml
 <hash>\osx-x64/FSharp/Microsoft.Build.dll
 <hash>\osx-x64/FSharp/Microsoft.Build.Engine.dll
@@ -1351,7 +1328,6 @@
 <hash>\osx-x64/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\osx-x64/ScriptCS/scriptcs.exe
 <hash>\osx-x64/ScriptCS/scriptcs.exe.config
-<hash>\osx-x64/ScriptCS/scriptcs.exe.ignore
 <hash>\osx-x64/ScriptCS/ScriptCs.Hosting.dll
 <hash>\osx-x64/ScriptCS/System.Collections.Immutable.dll
 <hash>\osx-x64/ScriptCS/System.Reflection.Metadata.dll
@@ -1608,7 +1584,6 @@
 <hash>\win-x64/dbgshim.dll
 <hash>\win-x64/FSharp/fsc.exe
 <hash>\win-x64/FSharp/fsc.exe.config
-<hash>\win-x64/FSharp/fsc.exe.ignore
 <hash>\win-x64/FSharp/fsc.xml
 <hash>\win-x64/FSharp/FSharp.Build.dll
 <hash>\win-x64/FSharp/FSharp.Build.xml
@@ -1624,11 +1599,9 @@
 <hash>\win-x64/FSharp/FSharp.Core.xml
 <hash>\win-x64/FSharp/fsi.exe
 <hash>\win-x64/FSharp/fsi.exe.config
-<hash>\win-x64/FSharp/fsi.exe.ignore
 <hash>\win-x64/FSharp/fsi.xml
 <hash>\win-x64/FSharp/fsiAnyCpu.exe
 <hash>\win-x64/FSharp/fsiAnyCpu.exe.config
-<hash>\win-x64/FSharp/fsiAnyCpu.exe.ignore
 <hash>\win-x64/FSharp/fsiAnyCpu.xml
 <hash>\win-x64/FSharp/Microsoft.Build.dll
 <hash>\win-x64/FSharp/Microsoft.Build.Engine.dll
@@ -1713,7 +1686,6 @@
 <hash>\win-x64/ScriptCS/ScriptCs.Engine.Roslyn.dll
 <hash>\win-x64/ScriptCS/scriptcs.exe
 <hash>\win-x64/ScriptCS/scriptcs.exe.config
-<hash>\win-x64/ScriptCS/scriptcs.exe.ignore
 <hash>\win-x64/ScriptCS/ScriptCs.Hosting.dll
 <hash>\win-x64/ScriptCS/System.Collections.Immutable.dll
 <hash>\win-x64/ScriptCS/System.Reflection.Metadata.dll
