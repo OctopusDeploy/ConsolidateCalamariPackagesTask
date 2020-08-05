@@ -1,3 +1,4 @@
+<hash>\Calamari.nuspec
 <hash>\linux-arm/Autofac.dll
 <hash>\linux-arm/AWSSDK.CloudFormation.dll
 <hash>\linux-arm/AWSSDK.Core.dll

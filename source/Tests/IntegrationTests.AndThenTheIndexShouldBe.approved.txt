@@ -5,6 +5,9 @@
       "Version": "14.2.2-enh-platforms0010",
       "IsNupkg": true,
       "PlatformHashes": {
+        "Calamari.nuspec": [
+          "<hash>"
+        ],
         "linux-arm": [
           "<hash>",
           "<hash>",
