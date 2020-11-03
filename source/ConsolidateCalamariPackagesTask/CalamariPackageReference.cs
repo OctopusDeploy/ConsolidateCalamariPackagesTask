@@ -22,12 +22,6 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
 
         public IReadOnlyList<SourceFile> GetSourceFiles(ILog log)
         {
-            var isNetFx = Name == "Calamari";
-            var isCloud = Name == "Calamari.Cloud";
-            var platform = isNetFx || isCloud
-                ? "netfx"
-                : Name.Split('.')[1];
-
             var archivePath = Path.Combine(packageReference.ResolvedPath, $"{Name}.{Version}.nupkg".ToLower());
             if (!File.Exists(archivePath))
                 throw new Exception($"Could not find the source NuGet package {archivePath} does not exist");
@@ -38,16 +32,21 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                     .Where(e => e.FullName != "[Content_Types].xml")
                     .Where(e => !e.FullName.StartsWith("_rels"))
                     .Where(e => !e.FullName.StartsWith("package/services"))
-                    .Select(entry => new SourceFile
+                    .Where(e => !e.FullName.EndsWith("nuspec"))
+                    .Select(entry =>
                     {
-                        PackageId = isCloud ? "Calamari.Cloud" : "Calamari",
-                        Version = Version,
-                        Platform = platform,
-                        ArchivePath = archivePath,
-                        IsNupkg = true,
-                        FullNameInDestinationArchive = entry.FullName,
-                        FullNameInSourceArchive = entry.FullName,
-                        Hash = hasher.Hash(entry)
+                        // Sashimi zips have each full Calamari executable in folders according to platform
+                        var parts = entry.FullName.Split('/');
+                        return new SourceFile
+                        {
+                            PackageId = Name,
+                            Version = Version,
+                            Platform = parts[0],
+                            ArchivePath = archivePath,
+                            FullNameInDestinationArchive = string.Join("/", parts.Skip(1)),
+                            FullNameInSourceArchive = entry.FullName,
+                            Hash = hasher.Hash(entry)
+                        };
                     })
                     .ToArray();
         }

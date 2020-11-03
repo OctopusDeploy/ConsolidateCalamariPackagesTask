@@ -6,7 +6,6 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
         public string Version { get; set; }
         public string Platform { get; set; }
         public string ArchivePath { get; set; }
-        public bool IsNupkg { get; set; }
         public string FullNameInDestinationArchive { get; set; }
         public string FullNameInSourceArchive { get; set; }
         public string Hash { get; set; }

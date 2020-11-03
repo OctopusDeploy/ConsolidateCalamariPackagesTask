@@ -57,7 +57,6 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                             Version = Version,
                             Platform = parts[0],
                             ArchivePath = toolZipPath,
-                            IsNupkg = false,
                             FullNameInDestinationArchive = string.Join("/", parts.Skip(1)),
                             FullNameInSourceArchive = entry.FullName,
                             Hash = hasher.Hash(entry)
