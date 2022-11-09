@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////////////////
 // TOOLS
 //////////////////////////////////////////////////////////////////////
-#tool "nuget:?package=GitVersion.CommandLine&version=4.0.0"
-#addin "Cake.FileHelpers&version=3.2.0"
+#tool "nuget:?package=GitVersion.CommandLine&version=5.11.1"
+#addin "Cake.FileHelpers&version=4.0.1"
 
 using Path = System.IO.Path;
 using IO = System.IO;
