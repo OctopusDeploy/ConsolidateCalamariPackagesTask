@@ -6,6 +6,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>    
     <PackageProjectUrl>https://github.com/OctopusDeploy/ConsolidateCalamariPackagesTask/</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/OctopusDeploy/ConsolidateCalamariPackagesTask/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +17,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Build.Framework" Version="16.5.0" />
     <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.5.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
 </Project>

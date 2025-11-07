@@ -22,8 +22,8 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
 
         public IReadOnlyList<SourceFile> GetSourceFiles(ILog log)
         {
-            var isNetFx = Name == "Calamari";
-            var isCloud = Name == "Calamari.Cloud";
+            var isNetFx = Name is "Calamari" or  "Octopus.Calamari";
+            var isCloud = Name is "Calamari.Cloud" or "Octopus.Calamari.Cloud";
             var platform = isNetFx || isCloud
                 ? "netfx"
                 : Name.Split('.')[1];
@@ -40,7 +40,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                     .Where(e => !e.FullName.StartsWith("package/services"))
                     .Select(entry => new SourceFile
                     {
-                        PackageId = isCloud ? "Calamari.Cloud" : "Calamari",
+                        PackageId = isCloud ? "Octopus.Calamari.Cloud" : "Octopus.Calamari",
                         Version = Version,
                         Platform = platform,
                         ArchivePath = archivePath,

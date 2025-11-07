@@ -32,7 +32,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
                 var packageHash = hasher.GetPackageCombinationHash(AssemblyVersion, packages);
                 log.Normal($"Hash of the package combination is {packageHash}");
 
-                var destination = Path.Combine(outputDirectory, $"Calamari.{packageHash}.zip");
+                var destination = Path.Combine(outputDirectory, $"Octopus.Calamari.{packageHash}.zip");
                 if (File.Exists(destination))
                 {
                     log.Normal("Calamari zip with the right package combination hash already exists");
@@ -62,11 +62,11 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
         private static IReadOnlyList<IPackageReference> GetPackages(Hasher hasher, IReadOnlyList<MsBuildPackageReference> packageReferences)
         {
             var calamariPackages = packageReferences
-                .Where(p => p.Name.StartsWith("Calamari"))
+                .Where(p => p.Name.StartsWith("Calamari") || p.Name.StartsWith("Octopus.Calamari"))
                 .Select(p => new CalamariPackageReference(hasher, p));
 
             var sashimiPackages = packageReferences
-                .Where(p => p.Name.StartsWith("Sashimi."))
+                .Where(p => p.Name.StartsWith("Sashimi.") || p.Name.StartsWith("Octopus.Sashimi."))
                 .Select(p => new SashimiPackageReference(hasher, p));
 
             return calamariPackages.Concat<IPackageReference>(sashimiPackages).ToArray();
@@ -75,7 +75,7 @@ namespace Octopus.Build.ConsolidateCalamariPackagesTask
         private void DeleteExistingCalamariZips(string destination)
         {
             log.Low("Deleting existing Calamari Zips");
-            foreach (var file in Directory.EnumerateFiles(Path.GetDirectoryName(destination), "Calamari.*.zip"))
+            foreach (var file in Directory.EnumerateFiles(Path.GetDirectoryName(destination), "*Calamari.*.zip"))
                 File.Delete(file);
         }
     }

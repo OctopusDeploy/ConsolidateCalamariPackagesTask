@@ -35,7 +35,7 @@ namespace Tests
             temp = Path.GetTempFileName();
             File.Delete(temp);
             Directory.CreateDirectory(temp);
-            expectedZip = Path.Combine(temp, $"Calamari.3327050d788658cd16da010e75580d32.zip");
+            expectedZip = Path.Combine(temp, "Octopus.Calamari.c2d0de4849bcaf0fa769110f675785ff.zip");
         }
 
         public void TearDown()
@@ -59,8 +59,6 @@ namespace Tests
                 .ToArray();
         }
         
-        
-
         public void WhenTheTaskIsExecuted()
         {
             var sw = Stopwatch.StartNew();
@@ -82,7 +80,14 @@ namespace Tests
         public void AndThenThePackageContentsShouldBe()
         {
             using (var zip = ZipFile.Open(expectedZip, ZipArchiveMode.Read))
-                this.Assent(string.Join("\r\n", zip.Entries.Select(e => SanitiseHashes(e.FullName)).OrderBy(k => k)), assentConfiguration);
+            {
+                var entries = zip.Entries
+                    .Select(e => SanitiseHashes(e.FullName))
+                    .Select(e => NormalizePaths(e))
+                    .OrderBy(k => k);
+                var received = string.Join("\r\n", entries);
+                this.Assent(received, assentConfiguration);
+            }
         }
 
         public void AndThenTheIndexShouldBe()
@@ -98,6 +103,9 @@ namespace Tests
         
         private static string SanitiseHashes(string s)
             => Regex.Replace(s, "[a-z0-9]{32}", "<hash>");
+
+        private static string NormalizePaths(string s)
+            => s.Replace("\\", "/");
         
         private static string Sanitise4PartVersions(string s)
             => Regex.Replace(s, @"[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+", "<version>");
